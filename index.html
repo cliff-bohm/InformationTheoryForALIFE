@@ -9,23 +9,29 @@
             background-color: white;
             font-family: Arial, sans-serif;
         }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            max-width: 100px; /* adjust size as needed */
+            height: auto;
+            margin-right: 20px;
+        }
         .content {
             width: 80%;
             margin: auto;
             padding: 20px;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;  /* Centers the image */
-            margin: 0 auto;
-        }
     </style>
 </head>
 <body>
     <div class="content">
-        <h1>Exploring Information Theory in Artificial Life</h1>
-        <img src="main/Logo.png" alt="Descriptive Alt Text">
+        <div class="header">
+            <img src="main/Logo.png" alt="Descriptive Alt Text">
+            <h1>Exploring Information Theory in Artificial Life</h1>
+        </div>
 
         <p>Welcome to my page dedicated to discussing the impacts and applications of information theory in artificial life research.</p>
         <p>This field provides fascinating insights into how informational processes underpin the complexities of living systems.</p>
