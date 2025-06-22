@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decoding the Ciphers of Life\nwith Information Theory</title>
+    <title>Decoding the Ciphers of Life with Information Theory</title>
     <style>
         body {
             background-color: white;
@@ -33,22 +33,51 @@
             <h1>Exploring Information Theory in Artificial Life</h1>
         </div>
 
-        <p>Welcome to my page dedicated to discussing the impacts and applications of information theory in artificial life research.</p>
-        <p>This field provides fascinating insights into how informational processes underpin the complexities of living systems.</p>
 
-        <h2>Citations</h2>
+<p>How do we measure complexity, cognition, and hidden structure in evolved systems?<\p>
+<p>Shannon Information Theory (IT) provides a powerful mathematical toolkit for analyzing similarities, dissimilarities, and structure within data. In Artificial Life (ALIFE) research, IT has been used to quantify population dynamics, classify cognition, and reveal the internal workings of evolved agents. However, its mathematics can be daunting — and misinterpretation is common.
+</p>
+
+<p>This tutorial introduces IT concepts and methods in a way that is accessible and directly relevant to ALIFE research. The focus is on building intuition — understanding what IT measures reveal (and what they do not), and how to apply them effectively in practice.</p>
+
+<h2>Methods covered:</h2>
+<ul>
+    <li>Representation (quantification of knowledge)</li>
+    <li>Fragmentation and Smearedness (distribution of knowledge)</li>
+    <li>Data Flow and Transfer Entropy</li>
+    <li>Cognitive complexity (PHI)</li>
+    <li>Information Decomposition (PID and FID)</li>
+</ul>
+
+<h2>Applications of IT:</h2>
+<ul>
+    <li>qunatifying population diversity and structure</li>
+    <li>classifying cognition based on information processing capacity</li>
+    <li>understanding cognition using information flow/tracing</li>
+    <li>encryption (what exactly is it)</li>
+	<li>the relationship between IT and emergence</li>
+</ul>
+
+<p>This tutorial is intended for ALIFE researchers at all levels, from newcomers curious about Information Theory to experienced practitioners seeking deeper insight. I will focuse on developing conceptual understanding and intuition. While some mathematical formalism is required, it will be minimized whenever possible. By the end of the session, attendees should have a clear sense of what IT can and cannot reveal, and how they may employ IT in their own research.</p>
+
+<h2>About the presentor</h2>
+        My name is Cliff Bohm, I'm a 7th year PhD student working with Chirs Adami. Althought at the time of this tutorial I will be a PostDoc working for Emily Dolson. I work on various topics in ALIFE, and have used Information Theory both to understand the operation of evolved digital cognitions as well as to quantify ecology. I'm currently working on a formal definition of emergence based on informtaion theory.
+
+
+<h2>Some papers with relevent content that will be covered</h2>
         <ul>
-            <li>Author Name (Year). <em>Title of the Paper.</em> Journal Name, Volume(Issue), pages. <a href="url_to_paper">Link to Paper</a></li>
-            <li>Author Name (Year). <em>Title of the Paper.</em> Journal Name, Volume(Issue), pages. <a href="url_to_paper">Link to Paper</a></li>
+            <li>Marstaller, L., Hintze, A. and Adami, C. (2013). <em>The evolution of representation in simple cognitive networks.</em> Neural computation, 25(8), pp.2079-2107. <a href="https://direct.mit.edu/neco/article-abstract/25/8/2079/7893/The-Evolution-of-Representation-in-Simple?redirectedFrom=PDF">Link to Paper</a></li>			
+            <li>Bohm, Clifford, Douglas Kirkpatrick, Victoria Cao, and Christoph Adami (2022). <em>Information fragmentation, encryption and information flow in complex biological networks.</em> Entropy 24, no. 5 <a href="https://www.mdpi.com/1099-4300/24/5/735">Link to Paper</a></li>
+            <li>Williams, Paul L., and Randall D. Beer (2022). <em>Nonnegative decomposition of multivariate information.</em> arXiv:1004.2515 <a href="https://arxiv.org/pdf/1004.2515">Link to Paper</a></li>
+            <li>Schreiber, Thomas (2000). <em>Measuring information transfer.</em> Physical review letters 85.2 <a href="https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.85.461">Link to Paper</a></li>
+            <li>Dolson, E. L., Vostinar, A. E., Wiser, M. J., & Ofria, C. (2019). <em>The MODES toolbox: Measurements of open-ended dynamics in evolving systems.</em> Artificial life , 25(1) <a href="https://watermark.silverchair.com/artl_a_00280.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAzYwggMyBgkqhkiG9w0BBwagggMjMIIDHwIBADCCAxgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMTkG1nv6TQ_EjOwegAgEQgIIC6cNCfzkM07a7jWvQ168rx9lQMuQ7LRqQxnFwZTQeAiYFb9C00cdg1dXoHWyedSWwcTmrIlOXTl5f0akV3f7KxcH5vDo3aWwhhwcXadmhG9TNMjCSZYpWANHIdycG4tvAIGKu2fkFAgJLgYelDLqEjk420_aHP1kDbemf43SWcJQVdvT_16Tk0vFm0I7wWA5Tf_kGooxHIt7rX-W0CQ8PYeinw770g2NR1bT8idt9ZJOCTFIl_JXslwiCQeyswTjrqfrncRe07-uhDubSqlTcV7XFwJSq--HJg9gGCE8H3uZdG0ryXHBpS5ulZSkFOWlSEBsOMSfS4-QfnLlSYK2DU6rYVNVBWI_3gdMYt7iXEp5C5kX4aQxiU5Rgxznd5SGNco5kbamG2VtXAQA86C71eWxJp1mC-A22_Vo28zJBRij2gpbm2ntULHGvZmVfVXWAjIVZCcV06ePdkqdykZE03bBgPwVMREF2tBsYH7WP5K3HFtIHQrOLn5cwVb0qPXuV3KTEHe0vN-pDrp1IvneQo9-IAIKkUKC4jV_9C7i4rljP5LQrccdk1sQVjDGdhrfXgS77UMUSWQOekvDVC9TeI7zuTy2Vm5qedM70FgyocMRB_7fXuJMeQbQ_-TzXSp692dmMMQB2SuQyTxV_93REy1BZjUo2Yk_pm6zXXAPcTD4ZhZBulwTOwiwsg2iRbgpJGwR_n_6mwBuSa2_O-oyjLbhJvXQfG1FyWYFoqvF0OpUV4fY8yL3rmeWmrgXvlLONtqchgp_56rEEMqu1fs3YTFcW-UOPQiXtgWQSfxRn9taM6dAhGBKBN4QQfc1IWtdLx2M4ayJ5UDYCzaF0RCU3A6D7ldTtbJv2q3F6HL1JQ_FMS5VIaWlHMauSh_paBH2c3PkOepydNRXhcx9D1T64s32C6tAgkltJ2QyjAxq5EbnqoY7lPcJMs7fjq8fYSi1EjSaxked9YxYOvaYV8i1M0jsW5Me5ZWe9pGo">Link to Paper</a></li>
         </ul>
 
-        <h2>Useful Links</h2>
-        <ul>
-            <li><a href="https://www.example.com">Link Description</a></li>
-            <li><a href="https://www.example.com">Link Description</a></li>
-        </ul>
+<h2>Contact</h2>
+<p>If you have questions before or after the tutorial, feel free to contact me:<br>
+Email: <a href="mailto:cliff.bohm@gmail.com">cliff.bohm@gmail.com</a></p>
     </div>
+	
+
 </body>
 </html>
-
-
